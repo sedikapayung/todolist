@@ -1,0 +1,30 @@
+POST HTTP://127.0.0.1:3001/api/login
+Content-Type:   application/json
+
+{
+    "Username":"sedika123",
+    "Password" :"11111"
+} 
+###
+GET  HTTP://127.0.0.1:3001/api/getJobs/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsIk5hbWUiOiJzZWRpa2Egc2lwYXl1bmciLCJVc2VybmFtZSI6InNlZGlrYTEyMyIsImlhdCI6MTcwOTMwOTU3NywiZXhwIjoxNzA5MzA5NTk3fQ.ajM8K7jvSpePvNAPMPuacSElsKpQUicLTXIy0ae8Q68
+###
+GET  HTTP://127.0.0.1:3001/token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIlVzZXJuYW1lIjoiaGVsbWluaXJ3YW5hIiwiTmFtZSI6ImhlbG1pIiwiaWF0IjoxNzA3ODM2MjQwLCJleHAiOjE3MDc4MzYyNjB9.j-ebZ3KF1bvuCxLF4VesxP_DXZZwgizF9Jk8ivAMXf0
+
+###
+POST  HTTP://127.0.0.1:3000/api/new/jobs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIlVzZXJuYW1lIjoiaGVsbWluaXJ3YW5hIiwiTmFtZSI6ImhlbG1pIiwiaWF0IjoxNzA3ODM3MzkyLCJleHAiOjE3MDc4Mzc0MTJ9.lkEYc_z10-1SNeoSTC1AibrcjsuNLF44eQyTgFpVWnE
+Content-Type: application/json
+
+{
+    "jobs":"helminirwana",
+    "description" :"helmi",
+    "deadline":"11-12-2024"
+} 
+###
+DELETE  HTTP://127.0.0.1:3000/logout
+
+###
+DELETE  HTTP://127.0.0.1:3000/api/deleted/7
+Authorization: Bearer 
